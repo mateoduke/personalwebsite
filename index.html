@@ -1,17 +1,64 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset="utf-8">
-        <script src = "js/bootstrap.min.js"></script>
-        <script src = "js/index.js"></script>
-        <link rel = "stylesheet" href = "css/bootstrap.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    </head>
+<html>
+<head>
+    <title> Website Demo </title>
+    <link rel="Stylesheet" href = "../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/style_copy.css">
+    <meta charset="utf-8">
 
-    <body>
-        <div class = "container">
-            <h1>My first bootstrap</h1>
-            <p>This is some text</p>
+</head>
+
+<body class = body-header>
+    <Header class = "app-header">
+        <h1> Demo Website </h1>
+    </Header>
+
+    <div class = "app-body">
+        <div class = "sidebar">
+            <nav class = "sidebar-nav">
+                <ul id = "tablist" class = "nav nav-tabs" role = "tablist">
+                    <li class = "nav-title text-center">
+                        <span>Menu</span>
+                    </li>
+                    <li class = "text-center">
+                        <a class = "nav-link" data-toggle="tab" role = "tab" href = "#home_tab"> Home</a>
+                    </li>
+                    <li class = "text-center">
+                        <a class = "nav-link" data-toggle="tab" role = "tab" href = "#about_tab"> About Us</a>
+                    </li>
+                    <li class = "text-center">
+                        <a class = "nav-link" data-toggle="tab" role = "tab" href = "#contact_tab"> Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </body>
+        <main class = "main">
+            <div class = "container-fluid">
+                <div class = "tab-content">
+                    <div class = "tab-pane active" role = "tabpanel" id = "home_tab">
+                        <div id = "home"></div>
+                    </div>
+                    <div class = "tab-pane" role = "tabpanel" id = "about_tab">
+                        <div id = "about"></div>
+                    </div>
+                    <div class = "tab-pane" role = "tabpanel" id = "contact_tab">
+                        <div id = "contact"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src = "../js/jquery-3.5.1.min.js"></script>
+    <script src = "../js/bootstrap.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#home").load("home.html");
+            $("#about").load("about.html");
+        });
+
+    </script>
+</body>
 </html>
