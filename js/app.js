@@ -1,4 +1,4 @@
-
+$.navigation = $('nav > ul.nav');
 $(document).ready(function($){
 
     // Add class .active to current link
