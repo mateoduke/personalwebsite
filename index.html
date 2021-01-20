@@ -1,63 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title> Website Demo </title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src = "js/bootstrap.min.js"></script>
-    
-    <meta charset="utf-8">
+<DOCTYPE html>
+    <html>
+        <head>
+            <link rel = "stylesheet" href = "css/bootstrap.min.css">
+            <script src = "js/bootstrap.min.js"></script>
+            <script src = "js/index.js"></script>
+            <script src =  "js/jquery-3.5.1.js"></script>
+            <title>Mateo Duke's Personal Website</title>
+        </head>
+        <body>
+            <h1>Welcome</h1>
 
-</head>
-
-<body class = body-header>
-    <Header class = "app-header">
-        <h1> Demo Website </h1>
-    </Header>
-
-    <div class = "app-body">
-        <div class = "sidebar">
-            <nav class = "sidebar-nav">
-                <ul id = "tablist" class = "nav nav-tabs" role = "tablist">
-                    <li class = "nav-title text-center">
-                        <span>Menu</span>
-                    </li>
-                    <li class = "text-center">
-                        <a class = "nav-link" data-toggle="tab" role = "tab" href = "#home_tab"> Home</a>
-                    </li>
-                    <li class = "text-center">
-                        <a class = "nav-link" data-toggle="tab" role = "tab" href = "#about_tab"> About Us</a>
-                    </li>
-                    <li class = "text-center">
-                        <a class = "nav-link" data-toggle="tab" role = "tab" href = "#contact_tab"> Contact Us</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <main class = "main">
-            <div class = "container-fluid">
-                <div class = "tab-content">
-                    <div class = "tab-pane active" role = "tabpanel" id = "home_tab">
-                        <div id = "home"></div>
-                    </div>
-                    <div class = "tab-pane" role = "tabpanel" id = "about_tab">
-                        <div id = "about"></div>
-                    </div>
-                    <div class = "tab-pane" role = "tabpanel" id = "contact_tab">
-                        <div id = "contact"></div>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </div>
-
-    
-    
-    <script>
-        $(document).ready(function(){
-            $("#home").load("home.html");
-            $("#about").load("about.html");
-        });
-
-    </script>
-</body>
-</html>
+        </body>
+    </html>
